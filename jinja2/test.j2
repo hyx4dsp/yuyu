@@ -1,0 +1,5 @@
+{%if vlan == "trunk" -%}
+port trunk allow pass vlan {{trunkvlan}}
+{% else -%}
+port access vlan {{trunkvlan}}
+{% endif -%}

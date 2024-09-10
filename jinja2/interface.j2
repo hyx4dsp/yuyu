@@ -1,0 +1,9 @@
+interface {{interface}}
+{%if vlan == "trunk" %}
+ port link-type trunk
+ undo port trunk permit vlan 1
+ port trunk permit vlan {{trunkvlan}}
+{% else %}
+ port access vlan {{vlan}}
+ undo stp enable
+{% endif %}

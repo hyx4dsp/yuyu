@@ -1,0 +1,6 @@
+interface,vlan,trunkvlan
+FGE2/0/0/4,100,
+FGE2/0/0/5,200,
+FGE2/0/0/6,300,
+FGE2/0/0/7,400,
+FGE2/0/0/8,trunk,100 200 300
